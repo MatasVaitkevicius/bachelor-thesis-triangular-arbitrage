@@ -1,0 +1,307 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\vaitk\\Desktop\\bakalauras-kodas\\crypto-dashboard\\contracts\\FlashloanDexSwap.sol": {
+      "lastModificationDate": 1648208334779,
+      "contentHash": "87cdd0309390811ea011fb5ef9b06fbb",
+      "sourceName": "contracts/FlashloanDexSwap.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FlashLoanReceiverBase.sol",
+        "./Interfaces.sol",
+        "./Libraries.sol",
+        "./Ownable.sol",
+        "hardhat/console.sol",
+        "./Uniswap.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FlashloanDexSwap"
+      ]
+    },
+    "C:\\Users\\vaitk\\Desktop\\bakalauras-kodas\\crypto-dashboard\\contracts\\FlashLoanReceiverBase.sol": {
+      "lastModificationDate": 1648208334775,
+      "contentHash": "15129798f956f6e18f0f283cf28602b5",
+      "sourceName": "contracts/FlashLoanReceiverBase.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces.sol",
+        "./Libraries.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FlashLoanReceiverBase"
+      ]
+    },
+    "C:\\Users\\vaitk\\Desktop\\bakalauras-kodas\\crypto-dashboard\\contracts\\Interfaces.sol": {
+      "lastModificationDate": 1648208334781,
+      "contentHash": "4f5bf170be5d764adb44e8ad92deaa98",
+      "sourceName": "contracts/Interfaces.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Libraries.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IERC20",
+        "IFlashLoanReceiver",
+        "ILendingPool",
+        "ILendingPoolAddressesProvider"
+      ]
+    },
+    "C:\\Users\\vaitk\\Desktop\\bakalauras-kodas\\crypto-dashboard\\contracts\\Libraries.sol": {
+      "lastModificationDate": 1649189822318,
+      "contentHash": "d4e8b2fd61845ed9b9ce845ebca394aa",
+      "sourceName": "contracts/Libraries.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Interfaces.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Address",
+        "DataTypes",
+        "SafeERC20",
+        "SafeMath"
+      ]
+    },
+    "C:\\Users\\vaitk\\Desktop\\bakalauras-kodas\\crypto-dashboard\\contracts\\Ownable.sol": {
+      "lastModificationDate": 1648208334774,
+      "contentHash": "e74e7b19930db2827b4b89b55a193c24",
+      "sourceName": "contracts/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Users\\vaitk\\Desktop\\bakalauras-kodas\\crypto-dashboard\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1649520746463,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "C:\\Users\\vaitk\\Desktop\\bakalauras-kodas\\crypto-dashboard\\contracts\\Uniswap.sol": {
+      "lastModificationDate": 1648208334778,
+      "contentHash": "f591f3e51ff7809d4559ef218a8608fa",
+      "sourceName": "contracts/Uniswap.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.12"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory",
+        "IUniswapV2Pair",
+        "IUniswapV2Router"
+      ]
+    },
+    "C:\\Users\\vaitk\\Desktop\\bakalauras-kodas\\crypto-dashboard\\contracts\\FlashloanDexSwapToken.sol": {
+      "lastModificationDate": 1652031830439,
+      "contentHash": "732e5a47afc59a55189232558ece7264",
+      "sourceName": "contracts/FlashloanDexSwapToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FlashloanDexSwapToken"
+      ]
+    }
+  }
+}

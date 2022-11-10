@@ -1,0 +1,189 @@
+{
+  "USDC_WMATIC_WETH": {
+    "symbol": "USDC_WMATIC_WETH",
+    "tokens": [
+      "USDC",
+      "WMATIC",
+      "WETH"
+    ],
+    "seed": "10000000",
+    "requiredProfit": "1000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "10000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://polygonscan.com/token/images/wMatic_32.png",
+      "https://etherscan.io/token/images/weth_28.png"
+    ]
+  },
+  "USDC_WETH_WMATIC": {
+    "symbol": "USDC_WETH_WMATIC",
+    "tokens": [
+      "USDC",
+      "WETH",
+      "WMATIC"
+    ],
+    "seed": "20000000",
+    "requiredProfit": "1000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "10000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://etherscan.io/token/images/weth_28.png",
+      "https://polygonscan.com/token/images/wMatic_32.png"
+    ]
+  },
+  "USDC_WMATIC_WBTC": {
+    "symbol": "USDC_WMATIC_WBTC",
+    "tokens": [
+      "USDC",
+      "WMATIC",
+      "WBTC"
+    ],
+    "seed": "30000000",
+    "requiredProfit": "1000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "10000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://polygonscan.com/token/images/wMatic_32.png",
+      "https://etherscan.io/token/images/wbtc_28.png?v=1"
+    ]
+  },
+  "USDC_WBTC_WMATIC": {
+    "symbol": "USDC_WBTC_WMATIC",
+    "tokens": [
+      "USDC",
+      "WBTC",
+      "WMATIC"
+    ],
+    "seed": "50000000",
+    "requiredProfit": "1000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "10000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://etherscan.io/token/images/wbtc_28.png?v=1",
+      "https://polygonscan.com/token/images/wMatic_32.png"
+    ]
+  },
+  "USDC_WETH_AAVE": {
+    "symbol": "USDC_WETH_AAVE",
+    "tokens": [
+      "USDC",
+      "WETH",
+      "AAVE"
+    ],
+    "seed": "100000000",
+    "requiredProfit": "1000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "10000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://etherscan.io/token/images/weth_28.png",
+      "https://etherscan.io/token/images/aave_32.png"
+    ]
+  },
+  "USDC_AAVE_WETH": {
+    "symbol": "USDC_AAVE_WETH",
+    "tokens": [
+      "USDC",
+      "AAVE",
+      "WETH"
+    ],
+    "seed": "1000000000",
+    "requiredProfit": "1000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "10000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://etherscan.io/token/images/aave_32.png",
+      "https://etherscan.io/token/images/weth_28.png"
+    ]
+  },
+  "USDC_WETH_QUICK": {
+    "symbol": "USDC_WETH_QUICK",
+    "tokens": [
+      "USDC",
+      "WETH",
+      "QUICK"
+    ],
+    "seed": "1000000000",
+    "requiredProfit": "1000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "100000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://etherscan.io/token/images/weth_28.png",
+      "https://etherscan.io/token/images/quickswap_32.png"
+    ]
+  },
+  "USDC_QUICK_WETH": {
+    "symbol": "USDC_QUICK_WETH",
+    "tokens": [
+      "USDC",
+      "QUICK",
+      "WETH"
+    ],
+    "seed": "1000000000",
+    "requiredProfit": "1000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "100000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://etherscan.io/token/images/quickswap_32.png",
+      "https://etherscan.io/token/images/weth_28.png"
+    ]
+  },
+  "USDC_WETH_USDT": {
+    "symbol": "USDC_WETH_USDT",
+    "tokens": [
+      "USDC",
+      "WETH",
+      "USDT"
+    ],
+    "seed": "100000000000",
+    "requiredProfit": "10000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "100000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://etherscan.io/token/images/weth_28.png",
+      "https://etherscan.io/token/images/tether_32.png"
+    ]
+  },
+  "USDC_USDT_WETH": {
+    "symbol": "USDC_USDT_WETH",
+    "tokens": [
+      "USDC",
+      "USDT",
+      "WETH"
+    ],
+    "seed": "100000000000",
+    "requiredProfit": "10000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "100000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://etherscan.io/token/images/tether_32.png",
+      "https://etherscan.io/token/images/weth_28.png"
+    ]
+  },
+  "USDC_MM_WETH": {
+    "symbol": "USDC_MM_WETH",
+    "tokens": [
+      "USDC",
+      "MM",
+      "WETH"
+    ],
+    "seed": "100000000",
+    "requiredProfit": "1000000",
+    "minimumOutput": "9500000",
+    "approvalAmount": "100000000",
+    "images": [
+      "https://etherscan.io/token/images/centre-usdc_28.png",
+      "https://etherscan.io/token/images/milliontoken_32.png",
+      "https://etherscan.io/token/images/weth_28.png"
+    ]
+  }
+}

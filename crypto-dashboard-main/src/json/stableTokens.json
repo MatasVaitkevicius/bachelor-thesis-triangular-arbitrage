@@ -1,0 +1,17 @@
+{
+    "USDC": {
+      "symbol": "USDC",
+      "name": "USD Coin",
+      "address": "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
+      "decimals": 6,
+      "image": "https://etherscan.io/token/images/centre-usdc_28.png"
+    },
+
+    "USDT": {
+      "symbol": "USDT",
+      "name": "Tether USD",
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "decimals": 6,
+      "image": "https://etherscan.io/token/images/tether_32.png"
+    }
+  }

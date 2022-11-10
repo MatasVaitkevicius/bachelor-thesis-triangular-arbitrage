@@ -1,0 +1,543 @@
+{
+	"info": {
+		"_postman_id": "12403dad-0d47-48cc-8e54-bc2c5be42b86",
+		"name": "Crypto-Dashboard-Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test-get-users-success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include publicAddress\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"publicAddress\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include _id\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"_id\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include nonce\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"nonce\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body publicAddress matches string\", function () {\r",
+							"    pm.expect(pm.response.json()[0].publicAddress).to.eql(\"0xa7aaf289038e7293a475f9c848935c6ba479604d\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body nonce matches string\", function () {\r",
+							"    pm.expect(pm.response.json()[0].nonce).to.eql(\"7561\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test-get-dexs-success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include publicAddress\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"publicAddress\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include _id\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"_id\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include nonce\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"nonce\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body publicAddress matches string\", function () {\r",
+							"    pm.expect(pm.response.json()[0].publicAddress).to.eql(\"0xa7aaf289038e7293a475f9c848935c6ba479604d\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body nonce matches string\", function () {\r",
+							"    pm.expect(pm.response.json()[0].nonce).to.eql(\"7561\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test-get-users-filter-by-public-address-success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include publicAddress\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"publicAddress\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include _id\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"_id\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include nonce\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"nonce\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body publicAddress matches string\", function () {\r",
+							"    pm.expect(pm.response.json()[0].publicAddress).to.eql(\"0xa7aaf289038e7293a475f9c848935c6ba479604d\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body nonce matches string\", function () {\r",
+							"    pm.expect(pm.response.json()[0].nonce).to.eql(\"7561\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/users?publicAddress=0xa7aaf289038e7293a475f9c848935c6ba479604d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "publicAddress",
+							"value": "0xa7aaf289038e7293a475f9c848935c6ba479604d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test-get-users-filter-by-public-address-not-found",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include publicAddress\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include([]);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/users?publicAddress=0xa7aaf289038e7293a475f9ssc848935c6ba479604d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					],
+					"query": [
+						{
+							"key": "publicAddress",
+							"value": "0xa7aaf289038e7293a475f9ssc848935c6ba479604d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test-get-trios-success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response includes error\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Error\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test-post-users-success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body publicAddress matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"publicAddress\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body _id matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"_id\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body nonce matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"nonce\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"publicAddress\": \"0xa7aaf289038e7293a475f9c848935c6ba479604d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test-post-users-error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 500\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response includes ValidationError\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"ValidationError\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test-post-dexs-success",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include _id\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"_id\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include __v\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"__v\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dex\": {\r\n      \"name\": \"Test Name\",\r\n      \"symbol\": \"test\",\r\n      \"factoryAddress\": \"test\",\r\n      \"routerAddress\": \"test\",\r\n      \"fee\": 0.555,\r\n      \"image\": \"zzzzz\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/dexs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"dexs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test-post-dexs-error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include _id\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"_id\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body include __v\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"__v\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dex\": {\r\n      \"name\": \"Test Name\",\r\n      \"symbol\": \"test\",\r\n      \"factoryAddress\": \"test\",\r\n      \"routerAddress\": \"test\",\r\n      \"fee\": 0.555,\r\n      \"image\": \"zzzzz\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/dexs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"dexs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
